@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShecodesChocolateProject</title>
+    <style>
+      body {
+        background-color: #ff895d;
+        margin: 20px auto;
+        padding: 30px;
+        background-image: linear-gradient(
+          179.4deg,
+          rgb(253, 240, 233) 2.2%,
+          rgb(255, 194, 203) 96.2%
+        );
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      h1 {
+        text-align: center;
+      }
+      h2 {
+        text-align: center;
+        padding: 15px;
+        border: 1px solid saddlebrown;
+        font-size: 22px;
+        border-radius: 40px;
+        line-height: 18px;
+        border-width: 4px;
+        font-weight: lighter;
+      }
+      h6 {
+        font-size: 18px;
+        opacity: 0.7;
+        text-align: center;
+        font-family: monospace;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        padding: 20px 0px;
+        border-radius: 40%;
+        max-width: 100%;
+      }
+      p {
+        text-align: center;
+        font-size: large;
+        line-height: 35px;
+      }
+      a {
+        font-weight: bolder;
+      }
+      strong {
+        font-size: 20px;
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        border: none;
+        background: saddlebrown;
+        color: whitesmoke;
+        font-size: 20px;
+        line-height: 20px;
+        padding: 30px 40px;
+        border-radius: 40px;
+        transition: all 200ms ease;
+        box-shadow: burlywood 0px 8px 8px 0;
+      }
+      button:hover {
+        cursor: grab;
+        opacity: 0.8;
+      }
+      .content {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 20px 40px;
+      }
+      .learn {
+        color: saddlebrown;
+        text-decoration: none;
+      }
+      .linked-in {
+        text-decoration: none;
+        color: #141010;
+      }
+      .linked-in:hover {
+        text-decoration: underline;
+        cursor: grab;
+      }
+      .learn:hover {
+        text-decoration: underline;
+        cursor: grab;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <h1>I Love Chocolate</h1>
+      <h2>Especially Chocolate Milk Bars!🍫</h2>
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/282/original/chocolate.jpg?1672750981"
+        width="400"
+      />
+      <hr />
+      <p>
+        <strong><em>Chocolate</em></strong> is a food made from roasted and
+        ground cacao seed kernels that is available as a liquid, solid, or
+        paste, either on its own or as a flavoring agent in other foods. Much of
+        the chocolate consumed today is in the form of sweet chocolate, a
+        combination of cocoa solids, cocoa butter or added vegetable oils, and
+        sugar. Milk chocolate is sweet chocolate that additionally contains milk
+        powder or condensed milk. White chocolate contains cocoa butter, sugar,
+        and milk, but no cocoa solids. Chocolate is one of the most popular food
+        types and flavors in the world, and many foodstuffs involving chocolate
+        exist, particularly desserts, including cakes, pudding, mousse,
+        chocolate brownies, and chocolate chip cookies.
+      </p>
+      <br />
+      <a
+        href="https://en.wikipedia.org/wiki/Chocolate"
+        target="_blank"
+        class="learn"
+      >
+        Learn More on Wikipedia
+        <div><span>📖 📖 📖</span></div>
+      </a>
+      <br />
+      <br />
+      <button>GRAB A CHOCOLATE</button>
+      <br />
+      <h6>
+        <strong>
+          <a
+            href="https://www.linkedin.com/in/mariam-bolanle-akinremi/"
+            target="_blank"
+            class="linked-in"
+            >Coded by Mariam B Akinremi
+          </a></strong
+        >
+      </h6>
+      <script>
+        function grab() {
+          let question = prompt("Do you like chocolate? (Yes or No)");
+          if (question === "no" || question === "No" || question === "NO") {
+            alert("Sorry, this page is not recommended for you.☹");
+          } else {
+            alert("Welcome to my ChocPage!👏💃");
+            let name = prompt("What is your name?");
+            let email = prompt("What is your email address?");
+            let choice = prompt(
+              "Which is your favourite? Dark/Milk/White Chocolate?"
+            );
+            alert(
+              "Thank you " +
+                name +
+                ", we'll be in touch by email. Don't forget to take a Chocolate bar today!"
+            );
+          }
+        }
+        let buttton = document.querySelector("button");
+        buttton.addEventListener("click", grab);
+      </script>
+    </div>
+  </body>
+</html>
